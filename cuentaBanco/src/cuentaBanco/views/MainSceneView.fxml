@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="356.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cuentaBanco.controllers.MainSceneController">
+   <children>
+      <TabPane layoutY="25.0" prefHeight="330.0" prefWidth="517.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Consultas de Banco">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="21.0" layoutY="14.0" text="Numero de Cuenta:" />
+                        <Button fx:id="btnConsultarDatos" layoutX="14.0" layoutY="262.0" mnemonicParsing="false" onAction="#consultarDatos" text="Consultar Datos" />
+                        <Button fx:id="btnConsignar" layoutX="305.0" layoutY="262.0" mnemonicParsing="false" onAction="#consignarDinero" prefHeight="25.0" prefWidth="90.0" text="Consignar" />
+                        <Button fx:id="btnRetirar" layoutX="411.0" layoutY="262.0" mnemonicParsing="false" onAction="#retirarDinero" prefHeight="25.0" prefWidth="92.0" text="Retirar" />
+                        <TextField fx:id="txtNumeroCuenta" layoutX="21.0" layoutY="42.0" prefHeight="25.0" prefWidth="474.0" />
+                        <Button fx:id="btnConsultarSaldo" layoutX="125.0" layoutY="262.0" mnemonicParsing="false" onAction="#consultarSaldo" text="Consultar Saldo" />
+                        <TextArea fx:id="txtResultados" editable="false" layoutX="23.0" layoutY="117.0" prefHeight="127.0" prefWidth="475.0" />
+                        <Separator layoutY="82.0" prefHeight="4.0" prefWidth="517.0" />
+                        <Label layoutX="23.0" layoutY="94.0" text="Resultados:" />
+                        <Separator layoutY="255.0" prefHeight="0.0" prefWidth="517.0" />
+                        <Button fx:id="btnLimpiar" layoutX="235.0" layoutY="262.0" mnemonicParsing="false" onAction="#limpiarDatos" text="Limpiar" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Label layoutX="155.0" layoutY="6.0" text="Cuenta Banco - Santiago Ovalle Cortes " />
+   </children>
+</AnchorPane>
